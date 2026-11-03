@@ -1,0 +1,5 @@
+src/private/*
+.env
+node_modules/
+dst/
+bin/
