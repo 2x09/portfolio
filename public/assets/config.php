@@ -11,5 +11,5 @@ $page_paths = [
     'glossary'  => 'pages/glossary',
     'resume'    => 'pages/resume',  
 ];
-$seperator = "<p>~</p>";
+$seperator = "~";
 ?>
