@@ -1,3 +1,11 @@
+<?php 
+$db_path = "../private/db.txt";
+$count = readInt($db_path);
+if (array_key_exists('increment', $_POST)) {
+    $count = readInt($db_path)+1;
+    writeInt($count, $db_path);
+}
+?>
 <section class="center">
     <h1> Portfolio von 2x10 </h1>
     <p>

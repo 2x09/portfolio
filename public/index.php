@@ -1,19 +1,22 @@
 <?php 
-require __DIR__ . '/assets/functions.php';
+require __DIR__ . '/assets/api.php';
+require __DIR__ . '/assets/config.php';
 
-$db_path = "../private/db.txt";
+$page_current = $_GET['page'] ?? 'home';
 
-$count = readInt($db_path);
-if (array_key_exists('increment', $_POST)) {
-    $count = readInt($db_path)+1;
-    writeInt($count, $db_path);
+if (!array_key_exists($page_current, $page_paths)) {
+    $page_current = 'home';
 }
 
-$head = render("components/head");
-$header = render("components/head");
-$home = render("components/home");
-$footer = render("components/head");
+$page = render($page_paths[$page_current]);
 
+$head = render("components/head");
+$header = render('components/header', [
+    'page_current'  => $page_current,
+    'nav_items'     => $page_names,
+    'seperator'     => $seperator
+]);
+$footer = render("components/head");
 ?>
 
 
@@ -30,12 +33,12 @@ $footer = render("components/head");
     </header>
     
     <main>
-        <?= $home; ?>
+        <?= $page; ?>
     </main>
 
     <footer>
         <?= $footer; ?>
-    </footer
+    </footer>
 </body>
 
 </html>

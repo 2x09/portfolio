@@ -1,0 +1,18 @@
+:root {
+    --black         : #070707;
+    --white         : #f7f7f7;
+
+    --red           : #F00;
+    --green         : #0F0;
+    --blue          : #00F;
+    --pink          : #F0F;
+
+    --bg            : var(--black);
+    --bg-content    : #373737;
+    --bg-content-2  : #4e4e4e;
+
+    --text          : var(--white);
+    --border        : var(--white);
+    --link          : var(--bg-content-2);
+    --selected      : var(--white);
+}
