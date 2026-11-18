@@ -16,9 +16,8 @@ $header = render('components/header', [
     'nav_items'     => $page_names,
     'seperator'     => $seperator
 ]);
-$footer = render("components/head");
+$footer = render("components/footer");
 ?>
-
 
 <!DOCTYPE html>
 <html lang="de">

@@ -27,11 +27,11 @@
     --content-bg        : var(--dark-gray-2);
     --content-bg-alt    : var(--dark-gray);
 
-    --nav-bg                : var(--content-bg);
-    --nav-color             : var(--gray);
-    --nav-border            : var(--border) var(--nav-color);
-    --nav-entry             : var(--nav-color);
-    --nav-entry-bg          : var(--button-col1);
-    --nav-selected-entry    : var(--button-col2);
-    --nav-shadow            : var(--shadow);
+    --hf-bg                : var(--content-bg);
+    --hf-color             : var(--gray);
+    --hf-border            : var(--border) var(--hf-color);
+    --hf-entry             : var(--hf-color);
+    --hf-entry-bg          : var(--button-col1);
+    --hf-selected-entry    : var(--button-col2);
+    --hf-shadow            : var(--shadow);
 }

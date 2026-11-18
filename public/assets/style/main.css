@@ -1,0 +1,17 @@
+main {
+    margin: auto;
+    display: grid;
+    
+    background: var(--content-bg);
+    
+    max-width: 1000px;
+    height: 2000px;
+
+    border-left: var(--content-border);
+    border-right: var(--content-border);
+}
+
+main section {
+    place-items: center;
+    text-align: center;
+}
