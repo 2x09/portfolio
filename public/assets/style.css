@@ -1,58 +1,103 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Gill Sans", sans-serif;
 }
 
 body {
-	background: #000;
-	color: #FFFFFF;
+	background: var(--bg);
+	color: var(--text);
+}
 
-	font-family: "Gill Sans", sans-serif;
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+a, button, input {
+    border: 0;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+a:hover, button:hover, input:hover {
+    color: var(--link-selected);
+}
+
+input, button {
+    background-color: var(--button-col1);
+    color: var(--button-col-2);
+    box-shadow: var(--shadow) var(--gray);
+    border-radius:10px;
+    width: 100px;
+    height: 30px;
+}
+
+input:hover, button:hover {
+    background-color: var(--button-col2);
+    color: var(--button-col-1);
+    box-shadow: var(--big-shadow) var(--button-col2);
 }
 
 main {
     margin: auto;
-    margin-bottom: 10px;
-    background: #080808;
-    max-width: 500px;
+    background: var(--content-bg);
+    max-width: 900px;
     height: 2000px;
-    margin: auto;
-    padding: 10px;
 
-    border-left: 1px dashed var(--border);
-    border-right: 1px dashed var(--border);
+    display: grid;
+
+    border-left: var(--content-border);
+    border-right: var(--content-border);
 }
 
-.center {
-   display: grid;
+main section {
    place-items: center;
-   align-text: center;
+   text-align: center;
 }
 
 header {
-    height: 40px;
+    background-color: var(--nav-bg);
+}
+
+header nav {
     display: flex;
+    height: 50px;
+
     align-items: center;
+    text-align: center;
     justify-content: center;
     overflow: hidden;
 
-    border-top: 1px dashed var(--border);
-    border-bottom: 1px dashed var(--border);
+    border-bottom: var(--nav-border);
+    border-top: var(--nav-border);
 }
 
 header a {
-    background-color: var(--bg);
-    border: 0;
-    width:150px;
-    cursor:pointer;
+    color: var(--nav-entry);
+    background-color: var(--nav-entry-bg);
+    width:120px;
+    box-shadow: var(--nav-shadow) var(--nav-entry);
+    border-radius:10px;
+}
+
+header p {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 header a:hover {
-    color:var(--selected)
+    background-color: var(--nav-entry-bg);
+    color:var(--nav-selected-entry);
+    box-shadow: var(--nav-shadow) var(--nav-selected-entry);
 }
 
-
 header img {
-  width: 2%;
-  object-fit: cover;
+    width: 2%;
+    object-fit: cover;
 }

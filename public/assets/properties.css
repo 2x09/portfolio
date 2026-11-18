@@ -1,18 +1,37 @@
 :root {
-    --black         : #070707;
-    --white         : #f7f7f7;
+    --white         : #fff3ff;
+    --gray          : #e0ccea;
+    --dark-gray     : #525252;
+    --dark-gray-2   : #0B0B10;
+    --black         : #060408;
 
-    --red           : #F00;
-    --green         : #0F0;
-    --blue          : #00F;
-    --pink          : #F0F;
+    --col1          : #F00;
+    --col2          : #0F0;
+    --col3          : #00F;
+    --col4          : #d674f4;
+    --col5          : #f474f46f;
 
     --bg            : var(--black);
-    --bg-content    : #373737;
-    --bg-content-2  : #4e4e4e;
+    --border        : 1px dashed;
+    --shadow        : 0 0 3px;
+    --big-shadow    : 0 0 15px;
 
-    --text          : var(--white);
-    --border        : var(--white);
-    --link          : var(--bg-content-2);
-    --selected      : var(--white);
+    --button-col1       : var(--bg); 
+    --button-col2       : var(--col4);
+
+    --text              : var(--white);
+    --link              : var(--white);
+    --link-selected     : var(--col4);
+
+    --content-border    : var(--border) var(--gray);
+    --content-bg        : var(--dark-gray-2);
+    --content-bg-alt    : var(--dark-gray);
+
+    --nav-bg                : var(--content-bg);
+    --nav-color             : var(--gray);
+    --nav-border            : var(--border) var(--nav-color);
+    --nav-entry             : var(--nav-color);
+    --nav-entry-bg          : var(--button-col1);
+    --nav-selected-entry    : var(--button-col2);
+    --nav-shadow            : var(--shadow);
 }

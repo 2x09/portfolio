@@ -3,7 +3,7 @@
 <meta name="description" content="hallo">
 
 <title>meow</title>
-<link rel="stylesheet" href="assets/styles/properties.css">
+<link rel="stylesheet" href="assets/properties.css">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="icon" type="image/x-icon" href="assets/image/lain.jpeg">
 
